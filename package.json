@@ -1,0 +1,39 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && fse copy src/assets dist/assets",
+    "watch": "webpack --watch",
+    "develop": "webpack server --open && npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rynangeles/resume.git"
+  },
+  "keywords": [
+    "ryan angeles"
+  ],
+  "author": "ryan angeles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rynangeles/resume/issues"
+  },
+  "homepage": "https://github.com/rynangeles/resume#readme",
+  "dependencies": {
+    "pdfjs-dist": "^2.7.570"
+  },
+  "devDependencies": {
+    "@atao60/fse-cli": "0.0.56",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "copyfiles": "^2.4.1",
+    "fs-extra": "^10.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
